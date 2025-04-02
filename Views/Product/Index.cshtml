@@ -1,0 +1,20 @@
+@model List<Product>
+
+@section Footer {
+    <div>
+        Only for Index footer
+    </div>
+}
+@section Header {
+    <div>
+        Only for Index Header
+    </div>
+}
+
+
+<div class="row my-3">
+    @foreach (Product prod in Model)
+    {
+        <partial name="_ProductCard" model="@prod" />
+    }
+</div>
