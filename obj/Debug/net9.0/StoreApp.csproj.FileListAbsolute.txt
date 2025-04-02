@@ -235,3 +235,5 @@ C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\obj\Debug\net9.0\compressed\7r
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\obj\Debug\net9.0\compressed\f9vbit1ekj-muycvpuwrr.gz
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\obj\Debug\net9.0\compressed\11meyrgl40-87fc7y1x7t.gz
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\obj\Debug\net9.0\compressed\omu34nzj59-5ipweew5fc.gz
+C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Entities\obj\Entities.csproj.nuget.dgspec.json
+C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Entities\obj\project.assets.json
