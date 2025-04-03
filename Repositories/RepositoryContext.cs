@@ -9,6 +9,8 @@ namespace Repositories
         //Products table is created in this database
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<Category> Categories{get;set;}
+
         public RepositoryContext(DbContextOptions<RepositoryContext> options):base(options)
         {
             
@@ -30,6 +32,10 @@ namespace Repositories
                 new Product(){ProductId=4,ProductName="Printer",Price=5_000},
                 new Product(){ProductId=5,ProductName="Keyboard",Price=20_000},
                 new Product(){ProductId=6,ProductName="Screen",Price=30_000}
+            );
+            modelBuilder.Entity<Category>().HasData(
+                new Category(){CategoryId=1,CategoryName="Book"},
+                new Category(){CategoryId=2,CategoryName="Electronic"}
             );
         }
     }
