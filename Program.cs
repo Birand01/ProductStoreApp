@@ -10,8 +10,10 @@ builder.Services.AddDbContext<RepositoryContext>(options=>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"));
 });
+
 builder.Services.AddScoped<IRepositoryManager,RepositoryManager>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 
 
 builder.Services.AddControllersWithViews(); 
