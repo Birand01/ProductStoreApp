@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> 
@@ -12,7 +14,8 @@ namespace Repositories
         }
         public IQueryable<T> FindAll(bool trackChanges)
         {
-            throw new NotImplementedException();
+            return trackChanges? _context.Set<T>()
+            :_context.Set<T>().AsNoTracking();
         }
     }
 }
