@@ -239,3 +239,5 @@ C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Entities\obj\
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Entities\obj\project.assets.json
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Repositories\obj\project.assets.json
 C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Repositories\obj\Repositories.csproj.nuget.dgspec.json
+C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Services\obj\project.assets.json
+C:\Users\SPINOZA\Desktop\DotNetMvc\Store\StoreApp\bin\Debug\net9.0\Services\obj\Services.csproj.nuget.dgspec.json
