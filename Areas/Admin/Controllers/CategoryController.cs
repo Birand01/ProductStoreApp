@@ -7,7 +7,7 @@ namespace StoreApp.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
-            return Index();
+            return View();
         }
     }
 } 
