@@ -1,3 +1,12 @@
-<p>
-    Hi from Categories viewport menu
-</p>
+@model IEnumerable<Category>
+    <div>
+        <ul class="list-group">
+@foreach(var cat in Model)
+{
+    <li class="list-group-item">
+        @cat.CategoryName
+    </li>
+}
+
+        </ul>
+    </div>
