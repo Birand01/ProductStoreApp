@@ -28,8 +28,15 @@ app.UseStaticFiles(); // for the usage of static files configuration (wwwroot)
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
+
+
+app.MapAreaControllerRoute(
+    name: "Admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
+
 app.MapControllerRoute(
-    name:"Default",
-    pattern:"{controller=Home}/{action=Index}/{id?}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
