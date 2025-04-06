@@ -23,11 +23,18 @@
                 <tr>
                     <th>@product.ProductId</th>
                     <th>@product.ProductName</th>
-                    <th>@product.Price</th>
+                    <th>@product.Price.ToString("c")</th>
                     <th>
                         <div class="btn-group">
                             <a class="btn btn-warning" asp-action="Update" 
-                            asp-route-id="@product.ProductId">Edit</a>
+                            asp-route-id="@product.ProductId">
+                            <i class="fa fa-edit"></i>
+                            Edit</a>
+                            <a class="btn btn-info" target="_blank"
+                            asp-area="" asp-controller="Product"   asp-action="Get" 
+                            asp-route-id="@product.ProductId">
+                            <i class="fa fa-search"></i>
+                            Search</a>
                         </div>
                     </th>
                 </tr>
