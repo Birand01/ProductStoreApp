@@ -47,7 +47,13 @@ namespace StoreApp.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Update(Product product)
         {
+            if(ModelState.IsValid)
+            {
+                serviceManager.ProductService.UpdateOneProduct(product);
+                return RedirectToAction("Index");
+            }
             return View();
+           
         }
     }
 }
