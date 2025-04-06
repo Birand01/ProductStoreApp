@@ -29,7 +29,13 @@ namespace StoreApp.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([FromForm] Product product)
         {
+            if(ModelState.IsValid)
+            {
+                serviceManager.ProductService.CreateProduct(product);
+                return RedirectToAction("Index");
+            }
             return View();
+           
         }
     }
 }
