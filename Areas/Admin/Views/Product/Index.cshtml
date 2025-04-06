@@ -30,6 +30,10 @@
                             asp-route-id="@product.ProductId">
                             <i class="fa fa-edit"></i>
                             Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" 
+                            asp-route-id="@product.ProductId">  
+                            <i class="fa fa-trash"></i>
+                            Delete</a>
                             <a class="btn btn-info" target="_blank"
                             asp-area="" asp-controller="Product"   asp-action="Get" 
                             asp-route-id="@product.ProductId">
