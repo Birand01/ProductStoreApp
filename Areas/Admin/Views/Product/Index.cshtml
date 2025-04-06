@@ -3,12 +3,19 @@
     <div class="display-6">
         PRODUCTS
     </div>
+
+    <div class="d-flex justify-content-end my-3">
+        <a class="btn btn-outline-success" asp-action="Create">Create
+            <i class="fa fa-plus"></i>
+        </a>
+    </div>
+
     <table class="table table-striped table-hover">
         <thead>
             <th>ID</th>
             <th>PRODUCT NAME</th>
             <th>PRICE </th>
-            <th>OPERATIONS</th>
+            <th>OPERATIONS</th  >
         </thead>
         <tbody>
             @foreach(Product product in Model)
