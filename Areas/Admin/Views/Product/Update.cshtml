@@ -7,9 +7,10 @@
     </div>
 </div>
 
-<form method="post" asp-action="Create">
+<form method="post" asp-action="Update">
     <div class="text-danger" asp-validation-summary="All"></div>
 
+    <input type="hidden" asp-for="ProductId"/>
 
 
     <div class="from-group my-3 ">
@@ -24,7 +25,7 @@
         <div class="btn-group">
         <button class="btn btn-primary" type="submit">
             <i class="fa fa-save"></i>
-            Save
+            Update
         </button>
         <a asp-action="Index" class="btn btn-outline-primary" >
             <i class="fa fa-list"></i>
