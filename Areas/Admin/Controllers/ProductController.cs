@@ -43,6 +43,14 @@ namespace StoreApp.Areas.Admin.Controllers
             return View(model);
         }
 
+
+         [HttpGet]
+        public IActionResult Delete([FromRoute(Name ="id")]int id)
+        {
+            serviceManager.ProductService.DeleteOneProduct(id);
+            return RedirectToAction("Index");
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Update(Product product)
@@ -55,5 +63,8 @@ namespace StoreApp.Areas.Admin.Controllers
             return View();
            
         }
+
+       
+       
     }
 }
